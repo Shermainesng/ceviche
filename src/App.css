@@ -58,6 +58,8 @@
 }
 .custom-home-row {
   background-color: #f8f5f0;
+  font-family: "kollektif";
+  text-align: center;
 }
 
 .custom-banner2 {
@@ -66,4 +68,23 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+/* INFO */
+.info-1-img {
+  background-image: url("stingray.jpg");
+}
+.info-2-img {
+  background-image: url("wedgefish.jpg");
+}
+.info-3-img {
+  background-image: url("fishstall.jpg");
+}
+.custom-info-img {
+  height: 18rem;
+  background-size: 100% 100%;
+}
+
+.info-text h2 {
+  color: #93b0bb;
 }

@@ -1,14 +1,35 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
+  const [toggle, setToggle] = useState(false);
+  const [navbar, setNavBar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 400) {
+      setNavBar(true);
+    } else {
+      setNavBar(false);
+    }
+  };
+
+  const btnIsClicked = () => {
+    if (toggle) {
+      setToggle(false);
+    } else {
+      setToggle(true);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom px-3">
+    <nav className={navbar || toggle ? "navbar navbar-expand-lg navbar-dark fixed-top navbar-custom px-3 active" : "navbar navbar-expand-lg navbar-dark fixed-top navbar-custom px-3"}>
       <div class="container-fluid">
         <Link className="navbar-brand logo-custom" to="/">
-          <img src="whitelogo.png" alt="ceviche" />
+          <img src={navbar || toggle ? "greywhitelogo.png" : "whitelogo.png"} alt="ceviche" />
         </Link>
-        <button class="navbar-toggler toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button onClick={btnIsClicked} class="navbar-toggler toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">

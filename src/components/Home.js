@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Info from "./Info";
 
 function Home() {
   return (
@@ -26,6 +27,10 @@ function Home() {
         <div className="custom-banner2 d-flex justify-content-center align-items-center">
           <h1 className="banner-font text-center">It's time we dive deeper</h1>
         </div>
+      </div>
+
+      <div className="row custom-home-row">
+        <Info />
       </div>
     </div>
   );
