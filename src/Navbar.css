@@ -1,0 +1,13 @@
+.logo-custom img {
+  width: 50%;
+}
+.navbar .navbar-custom {
+  background-color: transparent;
+}
+.navbar-nav li {
+  font-family: "kollektif";
+  font-size: 1.2rem;
+}
+button.navbar-toggler.toggler-custom {
+  background-color: black;
+}
