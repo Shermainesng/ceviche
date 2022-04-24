@@ -88,3 +88,13 @@
 .info-text h2 {
   color: #93b0bb;
 }
+
+/* //add media query at 700 */
+@media (max-width: 400px) {
+  .hiding-block {
+    display: none;
+  }
+  /* #mobile-menu{
+	  display:block;
+	} */
+}
