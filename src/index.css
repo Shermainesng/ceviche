@@ -10,3 +10,8 @@ code {
   -beige: #f8f5f0;
   -grey: #666666;
 }
+
+@font-face {
+  font-family: "kollektif";
+  src: local("kollektif"), url(./fonts/Kollektif.ttf) format("truetype");
+}
