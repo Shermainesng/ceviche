@@ -1,0 +1,17 @@
+.footer-row-custom {
+  background-color: rgba(147, 176, 187);
+}
+.useful-links p {
+  color: white;
+}
+.footer-logo img {
+  height: 4rem;
+}
+.icons-list {
+  color: white;
+  font-size: xx-large;
+  text-align: end;
+}
+.small-text {
+  font-size: x-small;
+}
